@@ -2,13 +2,13 @@ import { View, Text, Image, TextInput } from "react-native";
 import React from "react";
 import { icons } from "@/constants/icons";
 
-export default function SearchBar({
+const SearchBar = ({
   onPress,
   placeholder,
 }: {
   onPress: () => void;
   placeholder?: string;
-}) {
+}) => {
   return (
     <View className="flex-row items-center bg-dark-200 rounded-full px-5 py-4">
       <Image
@@ -27,4 +27,6 @@ export default function SearchBar({
       />
     </View>
   );
-}
+};
+
+export default SearchBar;
